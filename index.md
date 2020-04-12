@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" /> 
+  <meta http-equiv="Cache-Control" content="no-siteapp" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-touch-fullscreen" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="full-screen" content="yes" />
+  <!--UC强制全屏--> 
+  <meta name="browsermode" content="application" />
+  <!--UC应用模式--> 
+  <meta name="x5-fullscreen" content="true" />
+  <!--QQ强制全屏--> 
+  <meta name="x5-page-mode" content="app" />
+  <!--QQ应用模式--> 
+  <title>冰豆搜索 - 实用的全能搜索引擎</title>
+<meta name="Keywords"  content="冰豆搜索,聚合搜索,全能搜索,BT搜索,网盘搜索,资源搜索" />
+<meta name="Description" content="冰豆网旗下搜索引擎，提供更准确、易用的搜索向导，电影、美剧、磁力链接、字幕、小说、绿色软件、音乐、素材、网页、影视、音乐、图片、游戏、购物等，开设多种分类满足不同的搜索需求。" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1230786_gdvd1b4wlz.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1572019_j5q3orglwrh.css" />
+ </head> 
+ <body>   
+  <div id="menu">
+   <i></i>
+  </div> 
+  <div class="list closed"> 
+   <ul>
+    <li class="title"><i class="iconfont icon-changyong"></i> 常用</li> 
+	<li><a rel="nofollow" href="https://v.huangbin.net/" target="_blank"><i class="iconfont icon-ziyuan" style="color: #f03;"></i>美女秀场</a></li>
+	<li><a rel="nofollow" href="https://tv.bingdou.net/" target="_blank"><i class="iconfont icon-youku" style="color: #f03;"></i>电视直播</a></li>
+	<li><a rel="nofollow" href="https://vod.bingdou.net/" target="_blank"><i class="iconfont icon-yunbo" style="color: #f03;"></i>视频云播</a></li>
+    <li><a rel="nofollow" href="http://music.bingdou.net/" target="_blank"><i class="iconfont icon-kologom" style="color: #f03;"></i>免费音乐</a></li> 
+    <li><a rel="nofollow" href="https://api.bingdou.net/pic/" target="_blank"><i class="iconfont icon-tupian" style="color: #f90;"></i>免费图床</a></li> 
+    <li><a rel="nofollow" href="https://api.bingdou.net/ps/" target="_blank"><i class="iconfont icon-p" style="color: #fff;"></i>在线PS</a></li> 
+    <li><a rel="nofollow" href="https://tao.bingdou.net/" target="_blank"><i class="iconfont icon-Qyouhuiquan" style="color: #2196f3;"></i>天猫优惠券</a></li> 
+    <li><a rel="nofollow" href="https://dwz.cn/" target="_blank"><i class="iconfont icon-fuzhilianjiexian-" style="color: #f05;"></i>短网址生成</a></li>
+    <!------>
+            <li class="title"><i class="iconfont icon-youxiang"></i> 邮箱</li>
+            <li><a rel="nofollow" href="https://mail.qq.com/" target="_blank"><i class="iconfont icon-QQ" style="color: #f05;"></i>QQ邮箱</a></li>
+			<li><a rel="nofollow" href="https://mail.163.com/" target="_blank"><i class="iconfont icon-wangyi" style="color: #c6001d;"></i>网易邮箱</a></li>
+			<li><a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank"><i class="iconfont icon-yunyouxiang" style="color: #f15534;"></i>阿里邮箱</a></li>
+			<li><a rel="nofollow" href="https://mail.sina.com.cn/" target="_blank"><i class="iconfont icon-xinlang" style="color: #e6162d;"></i>新浪邮箱</a></li>
+			<li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="iconfont icon-gmail" style="color: #f03;"></i>Gmail</a></li>
+            <li><a rel="nofollow" href="https://outlook.live.com/mail/" target="_blank"><i class="iconfont icon-windows" style="color: #059;"></i>Hotmail</a></li>
+            <!------>
+            <li class="title"><i class="iconfont icon-shipin"></i> 视频媒体</li>
+            <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>
+            <li><a rel="nofollow" href="https://www.youku.com/" target="_blank"><i class="iconfont icon-youku" style="color:#09e;"></i>优酷</a></li>
+			<li><a rel="nofollow" href="https://www.mgtv.com/" target="_blank"><i class="iconfont icon-youtube" style="color:#f03;"></i>芒果TV</a></li>
+            <li><a rel="nofollow" href="https://www.iqiyi.com/" target="_blank"><i class="iconfont icon-aiqiyi" style="color:#1d0;"></i>爱奇艺</a></li>
+            <li><a rel="nofollow" href="http://www.zmz2019.com/" target="_blank"><i class="iconfont icon-zimu" style="color: #067;"></i>字幕组</a></li>
+            <li><a rel="nofollow" href="http://www.acfun.cn/index.html" target="_blank"><i class="iconfont icon-acfun" style="color:#f33;"></i>ACFUN</a></li>
+            <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><i class="iconfont icon-bili" style="color:#0ad;"></i>哔哩哔哩</a></li>
+            <li><a rel="nofollow" href="http://v.bingdou.net/" target="_blank"><i class="iconfont icon-yunbo" style="color:#ff8800;"></i>影视搜索</a></li>
+            <!------>
+            <li class="title"><i class="iconfont icon-sheji"></i> 设计视觉</li>
+            <li><a rel="nofollow" href="https://web.yyv.me/" target="_blank"><i class="iconfont icon-daohang1"></i>设计导航</a></li>
+            <li><a rel="nofollow" href="https://www.pinterest.com/" target="_blank"><i class="iconfont icon-pinterest" style="color:#e02;"></i>Pinterest</a></li>
+            <li><a rel="nofollow" href="https://www.behance.net/" target="_blank"><i class="iconfont icon-behance" style="color:#56f;"></i>Behance</a></li>
+            <li><a rel="nofollow" href="https://www.dribbble.com/" target="_blank"><i class="iconfont icon-dribbble" style="color:#e48;"></i>Dribbble</a></li>
+            <li><a rel="nofollow" href="https://huaban.com/" target="_blank"><i class="iconfont icon-huaban" style="color:#f06;"></i>花瓣</a></li>
+            <li><a rel="nofollow" href="https://www.zcool.com.cn/" target="_blank"><i class="iconfont icon-zhanku" style="color:#f90;"></i>站酷</a></li>
+            <li><a rel="nofollow" href="https://www.iconfont.cn/" target="_blank"><i class="iconfont icon-iconfont" style="color: #ff6019;"></i>阿里图标</a></li>
+            <li><a rel="nofollow" href="https://www.iconfinder.com/" target="_blank"><i class="iconfont icon-eye"></i>IconFinder</a></li>
+            <li><a rel="nofollow" href="https://uiiiuiii.com/" target="_blank"><i class="iconfont icon-jiaocheng" style="color:#0aa;"></i>优设教程</a></li>
+            <!------>
+            <li class="title"><i class="iconfont icon-msg"></i> 社交</li>
+            <li><a rel="nofollow" href="https://www.weibo.com" target="_blank"><i class="iconfont icon-weibo" style="color: #e6162d;"></i>微博</a></li>
+            <li><a rel="nofollow" href="https://www.zhihu.com/" target="_blank"><i class="iconfont icon-zhihu" style="color: #0084ff;"></i>知乎</a></li>
+            <li><a rel="nofollow" href="https://www.douban.com/" target="_blank"><i class="iconfont icon-douban" style="color: #072;"></i>豆瓣</a></li>
+            <li><a rel="nofollow" href="https://www.jianshu.com/" target="_blank"><i class="iconfont icon-jianshu" style="color:#e46e57;"></i>简书</a></li>
+            <li><a rel="nofollow" href="https://www.v2ex.com/" target="_blank"><i class="iconfont icon-v2ex" style="color: #555;"></i>V2EX</a></li>
+            <li><a rel="nofollow" href="https://www.instagram.com" target="_blank"><i class="iconfont icon-instagram" style="color: #93009f;"></i>Instagram</a></li>
+            <li><a rel="nofollow" href="https://www.twitter.com" target="_blank"><i class="iconfont icon-twitter" style="color: #00bcff;"></i>Twitter</a></li>
+            <li><a rel="nofollow" href="https://www.facebook.com" target="_blank"><i class="iconfont icon-facebook" style="color: #4267b2;"></i>Facebook</a></li>
+            <!------>
+            <li class="title"><i class="iconfont icon-gouwuche"></i> 购物</li>
+            <li><a rel="nofollow" href="https://tao.bingdou.net/" target="_blank"><i class="iconfont icon-99" style="color: #fe2e52;"></i>冰豆精选</a></li>
+			<li><a rel="nofollow" href="https://www.taobao.com" target="_blank"><i class="iconfont icon-taobao" style="color: #ff6019;"></i>淘宝网</a></li>
+            <li><a rel="nofollow" href="http://s.click.taobao.com/t?e=m%3D2%26s%3DNqyqYWAT0AQcQipKwQzePCperVdZeJvipRe%2F8jaAHci5VBFTL4hn2Ujsyziig6Rnlg6AtVBcXjwYkE6AykScWkMRpmBaCF%2Ba%2FPXdsCqvUnoUzj%2BE6lIZPb0CYBEjBf0rLxRPKN2FDAck%2FCKKDVvEs8YMXU3NNCg%2F" target="_blank"><i class="iconfont icon-juhuasuan" style="color: #E61414;"></i>天猫网</a></li>
+            <li><a rel="nofollow" href="http://temai.taobao.com/?pid=mm_10262940_7532483_59280558" target="_blank"><i class="iconfont icon-temai" style="color: #ff6019;"></i>淘宝特卖</a></li>
+            <li><a rel="nofollow" href="https://www.jd.com" target="_blank"><i class="iconfont icon-jingdong" style="color: #e33333;"></i>京东</a></li>
+            <li><a rel="nofollow" href="https://www.suning.com/" target="_blank"><i class="iconfont icon-suning" style="color: #f90;"></i>苏宁易购</a></li>
+            <li><a rel="nofollow" href="http://you.163.com/" target="_blank"><i class="iconfont icon-yanxuan" style="color: #B4A078;"></i>网易严选</a></li>
+            <li><a rel="nofollow" href="https://www.amazon.cn/" target="_blank"><i class="iconfont icon-amazon" style="color: #fc9b18;"></i>亚马逊</a></li>
+            <li><a rel="nofollow" href="http://www.dangdang.com/" target="_blank"><i class="iconfont icon-dangdang" style="color: #ff2832;"></i>当当</a></li>
+            
+            <!------>
+            <li class="title"><i class="iconfont icon-ai-tool"></i> 工具</li>
+            <li><a rel="nofollow" href="http://tools.imiku.me/" target="_blank"><i class="iconfont icon-ai-tool"></i>Miku工具</a></li>
+            <li><a rel="nofollow" href="http://www.ip138.com/" target="_blank"><i class="iconfont icon-IP" style="color: #02f;"></i>IP查询</a></li>
+            <li><a rel="nofollow" href="https://translate.google.cn/?hl=zh-CN" target="_blank"><i class="iconfont icon-fanyi" style="color: #02f;"></i>谷歌翻译</a></li>
+            <li><a rel="nofollow" href="http://www.slimego.cn/" target="_blank"><i class="iconfont icon-shilaimu" style="color: #0f89c2;"></i>网盘搜索</a></li>
+            <li><a rel="nofollow" href="https://feedly.com" target="_blank"><i class="iconfont icon-feedly" style="color: #11dd00;"></i>Feedly</a></li>
+            <li><a rel="nofollow" href="https://pan.baidu.com" target="_blank"><i class="iconfont icon-baiduyun" style="color: #148bfe;"></i>百度网盘</a></li>
+            <li><a rel="nofollow" href="https://www.baiduwp.com" target="_blank"><i class="iconfont icon-cloud-download" style="color: #148bfe;"></i>网盘解析</a></li>
+            <li><a rel="nofollow" href="https://www.mdeditor.com/" target="_blank"><i class="iconfont icon-md" style="color:#09f;"></i>MD编辑器</a></li>
+            <li><a rel="nofollow" href="http://cubic-bezier.com" target="_blank"><i class="iconfont icon-quxian" style="color: #f08;"></i>贝赛尔曲线</a></li>
+            <li><a rel="nofollow" href="http://tool.chinaz.com/Tools/Base64.aspx" target="_blank"><i class="iconfont icon-base64" style="color:#1d0;"></i>Base64</a></li>
+            <li><a rel="nofollow" href="https://javascriptobfuscator.com/Javascript-Obfuscator.aspx" target="_blank"><i class="iconfont icon-jshunxiao" style="color: #48c;"></i>JS混淆器</a></li>
+            <li><a rel="nofollow" href="https://ping.pe" target="_blank"><i class="iconfont icon-wangluo1" style="color:#1d0;"></i>Ping.pe</a></li>
+            <li><a rel="nofollow" href="https://ping.chinaz.com/" target="_blank"><i class="iconfont icon-pingup" style="color:#2361ad;"></i>站长Ping</a></li>
+            <li><a rel="nofollow" href="https://apkdl.in/" target="_blank"><i class="iconfont icon-anzhuo" style="color:#094;"></i>APK下载</a></li>
+            <!------>
+            <li class="title"><i class="iconfont icon-kongzhitai"></i> 开发</li>
+            <li><a rel="nofollow" href="http://www.w3school.com.cn/" target="_blank"><i class="iconfont icon-h5" style="color:#c03;"></i>W3school</a></li>
+            <li><a rel="nofollow" href="https://github.com/" target="_blank"><i class="iconfont icon-github"></i>Github</a></li>
+            <li><a rel="nofollow" href="https://codepen.io/" target="_blank"><i class="iconfont icon-codepen"></i>Codepen</a></li>
+            <li><a rel="nofollow" href="https://www.52pojie.cn/" target="_blank"><i class="iconfont icon-theater-masks" style="color:#f03;"></i>吾爱破解</a></li>
+            <li><a rel="nofollow" href="https://segmentfault.com/" target="_blank"><i class="iconfont icon-msg" style="color:#096;"></i>SF思否</a></li>
+            <li><a rel="nofollow" href="https://cdnjs.com/" target="_blank"><i class="iconfont icon-cdnjs" style="color: #e52;"></i>CdnJs</a></li>
+            <li><a rel="nofollow" href="https://fontawesome.com/icons?d=gallery&m=free" target="_blank"><i class="iconfont icon-font-awesome" style="color: #4af;"></i>Font A.</a></li>
+            <li><a rel="nofollow" href="https://msdn.itellyou.cn/" target="_blank"><i class="iconfont icon-windows" style="color: #48c;"></i>MSDN下载</a></li>
+            <li><a rel="nofollow" href="https://dash.cloudflare.com/" target="_blank"><i class="iconfont icon-cloudflare" style="color: #f37f20;"></i>C. flare</a></li>
+            <li><a rel="nofollow" href="https://www.swiper.com.cn/" target="_blank"><i class="iconfont icon-S" style="color:#065fe3;"></i>Swiper</a></li>
+        </ul> 
+  </div>
+   <div class="tianqi">
+<div id="he-plugin-simple" style="z-index:10"></div>
+<script>
+WIDGET = {
+  CONFIG: {
+    "modules": "01234",
+    "background": 5,
+    "tmpColor": "FFFFFF",
+    "tmpSize": 16,
+    "cityColor": "FFFFFF",
+    "citySize": 16,
+    "aqiColor": "FFFFFF",
+    "aqiSize": 16,
+    "weatherIconSize": 24,
+    "alertIconSize": 18,
+    "padding": "10px 10px 10px 10px",
+    "shadow": "1",
+    "language": "auto",
+    "borderRadius": 5,
+    "fixed": "false",
+    "vertical": "middle",
+    "horizontal": "center",
+    "key": "b597148210be4ce8b36a88ad327c398a"
+  }
+}
+</script>
+<script src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
+    </div>
+  <div id="search" class="s-search">
+  <div class="logo"><a href="http://so.bingdou.net/"><img src="logo.png"/></a></div>
+   <div id="search-list" class="hide-type-list">
+    <div class="s-type">
+     <span></span>
+     <div class="s-type-list animated fadeInUp">
+      <label for="type-baidu">常用</label>
+      <label for="type-search">搜索</label>
+      <label for="type-br">工具</label>
+      <label for="type-zhihu">社区</label>
+      <label for="type-tao2">生活</label>
+     </div>
+    </div>
+    <div class="search-group group-a">
+     <span class="type-text">常用</span>
+     <ul class="search-type">
+      <li><input checked="" hidden="" type="radio" name="type" id="type-baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下" /><label for="type-baidu"><span>网页</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-tao" value="https://tao.bingdou.net/?r=l&kw=" data-placeholder="天猫优惠券" /><label for="type-tao"><span>优惠券</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-music" value="http://music.bingdou.net/?type=netease&name=" data-placeholder="音乐搜索下载" /><label for="type-music"><span>音乐</span></label></li>
+	  <li><input hidden="" type="radio" name="type" id="type-yingshi" value="http://v.bingdou.net/so/?q=" data-placeholder="影视资源" /><label for="type-yingshi"><span>影视</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-weixin" value="http://weixin.sogou.com/weixin?type=2&s_from=input&_3=n&query=" data-placeholder="微信文章搜索" /><label for="type-weixin"><span>微信</span></label></li>
+	  <li><input hidden="" type="radio" name="type" id="type-pansou" value="http://www.pansou.com/?q=" data-placeholder="网盘资源" /><label for="type-pansou"><span>网盘</span></label></li>
+	  <li><input hidden="" type="radio" name="type" id="type-bt" value="http://pianyuan.la/search?q=" data-placeholder="BT种子" /><label for="type-bt"><span>BT种子</span></label></li>
+	  <li><input hidden="" type="radio" name="type" id="type-pc6" value="https://s.pc6.com/cse/search?q=" data-placeholder="软件下载" /><label for="type-pc6"><span>软件</span></label></li>
+	  <li><input hidden="" type="radio" name="type" id="type-huya" value="http://www.huya.com/search.php?hsk=" data-placeholder="虎牙直播" /><label for="type-huya"><span>直播</span></label></li>
+     </ul>
+    </div>
+    <div class="search-group group-b">
+     <span class="type-text">搜索</span>
+     <ul class="search-type">
+      <li><input hidden="" type="radio" name="type" id="type-search" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下" /><label for="type-search"><span>百度</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-360" value="https://www.so.com/s?src=lm&ls=sm2088681&lm_extend=ctype:31&q=" data-placeholder="360好搜" /><label for="type-360"><span>360</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-sogo" value="https://www.sogou.com/web?query=" data-placeholder="搜狗搜索" /><label for="type-sogo"><span>搜狗</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-bing" value="https://cn.bing.com/search?q=" data-placeholder="微软Bing搜索" /><label for="type-bing"><span>Bing</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-sm" value="https://yz.m.sm.cn/s?q=" data-placeholder="UC移动端搜索" /><label for="type-sm"><span>神马</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-google1" value="https://www.google.com/search?q=" data-placeholder="谷歌两下" /><label for="type-google1"><span>Google</span></label></li>
+     </ul>
+    </div>
+    <div class="search-group group-c">
+     <span class="type-text">工具</span>
+     <ul class="search-type">
+      <li><input hidden="" type="radio" name="type" id="type-br" value="http://rank.chinaz.com/all/" data-placeholder="请输入网址(不带http://)" /><label for="type-br"><span>权重查询</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-links" value="http://link.chinaz.com/" data-placeholder="请输入网址(不带http://)" /><label for="type-links"><span>友链检测</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-icp" value="https://icp.aizhan.com/" data-placeholder="请输入网址(不带http://)" /><label for="type-icp"><span>备案查询</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-ping" value="http://ping.chinaz.com/" data-placeholder="请输入网址(不带http://)" /><label for="type-ping"><span>PING检测</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-404" value="http://tool.chinaz.com/Links/?DAddress=" data-placeholder="请输入网址(不带http://)" /><label for="type-404"><span>死链检测</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-ciku" value="http://www.ciku5.com/s?wd=" data-placeholder="请输入关键词" /><label for="type-ciku"><span>关键词挖掘</span></label></li>
+     </ul>
+    </div>
+    <div class="search-group group-d">
+     <span class="type-text">社区</span>
+     <ul class="search-type">
+      <li><input hidden="" type="radio" name="type" id="type-zhihu" value="https://www.zhihu.com/search?type=content&amp;q=" data-placeholder="知乎" /><label for="type-zhihu"><span>知乎</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-wechat" value="http://weixin.sogou.com/weixin?type=2&s_from=input&_3=n&query=" data-placeholder="微信" /><label for="type-wechat"><span>微信</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-weibo" value="http://s.weibo.com/weibo/" data-placeholder="微博" /><label for="type-weibo"><span>微博</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-douban" value="https://www.douban.com/search?q=" data-placeholder="豆瓣" /><label for="type-douban"><span>豆瓣</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-why" value="https://ask.seowhy.com/search/?q=" data-placeholder="SEO问答社区" /><label for="type-why"><span>搜外问答</span></label></li>
+     </ul>
+    </div>
+    <div class="search-group group-e">
+     <span class="type-text">生活</span>
+     <ul class="search-type">
+      <li><input hidden="" type="radio" name="type" id="type-tao2" value="https://tao.bingdou.net/?r=l&kw=" data-placeholder="天猫优惠券" /><label for="type-tao2"><span>优惠券</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-kuaidi100" value="http://www.kuaidi100.com/?" data-placeholder="快递100" /><label for="type-kuaidi100"><span>快递100</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-xiachufang" value="http://www.xiachufang.com/search/?keyword=" data-placeholder="下厨房" /><label for="type-xiachufang"><span>下厨房</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-xiangha" value="https://www.xiangha.com/so/?q=caipu&amp;s=" data-placeholder="香哈菜谱" /><label for="type-xiangha"><span>香哈菜谱</span></label></li>
+      <li><input hidden="" type="radio" name="type" id="type-12306" value="http://www.12306.cn/?" data-placeholder="12306" /><label for="type-12306"><span>12306</span></label></li>
+      <li> <input hidden="" type="radio" name="type" id="type-qunar" value="https://www.qunar.com/?" data-placeholder="去哪儿" /><label for="type-qunar"><span>去哪儿</span></label></li>
+     </ul>
+    </div>
+   </div>
+   <form action="https://www.baidu.com/s?wd=" method="get" target="_blank" id="super-search-fm">
+    <input type="text" baiduSug="1" id="search-text" placeholder="输入关键字搜索" style="outline:0" />
+    <button type="submit" id="searchBtn"><i class="iconfont icon-xdss"></i></button>
+   </form>
+   <div class="set-check hidden-xs">
+    <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off" />
+   </div>
+   <!--foot-->
+  <div class="clear"></div>
+<div class="foot">
+<p class="foot_p2"><a href="https://www.bingdou.net/about/" target="_blank">关于我们</a><a href="https://www.bingdou.net/about/contact.html" target="_blank">联系我们</a><a href="https://www.bingdou.net/about/map.html" target="_blank">网站地图</a></p>
+<p class="foot_p2"><span>Copyright &copy; 2012-<script type="text/javascript">copyright=new Date();update=copyright.getFullYear();document.write(""+ update + "");</script> bingdou.net, All Rights Reserved.</span></p>
+</div>
+<!--foot-->
+  </div>
+  <script src="//lib.baomitu.com/jquery/3.4.1/jquery.js"></script>
+  <script>
+  $(document).ready(function() {
+    $("#menu").click(function(event) {
+        $(this).toggleClass('on');
+        $(".list").toggleClass('closed');
+    });
+});
+</script>
+<script type="text/javascript">
+// super search
+(function() {
+    var types = document.querySelectorAll('input[name="type"]');
+    var fm = document.querySelector('#super-search-fm');
+    var searchTx = document.querySelector('#search-text');
+    var target = document.querySelector('#set-search-blank');
+    var groups = document.querySelectorAll('.search-group');
+    var activeType = types[0];
+
+    init();
+
+    function init() {
+        initTarget();
+        initRadio();
+        initPlaceholder();
+        initAction();
+    }
+
+    function initTarget() {
+        target.checked = isNewWindow()
+    }
+
+    function initRadio() {
+        var checked = document.querySelector('input[name="type"][value="' + getType() +'"]');
+
+        if (checked) {
+            checked.checked = true
+            setGroupActive(checked);
+        }
+    }
+
+    function initPlaceholder() {
+        setPlaceholder(getPlaceholder())
+    }
+
+    function initAction() {
+        setAction(getSearchUrl())
+    }
+
+    function setGroupActive(ele) {
+        for (var i = 0; i < groups.length; i++) {
+            groups[i].classList.remove('s-current');
+        }
+
+        ele.parentNode.parentNode.parentNode.classList.add('s-current');
+    }
+
+
+    function saveItem(k, v) {
+        window.localStorage.setItem('superSearch' + k, v);
+    }
+
+    function getItem(k) {
+        return window.localStorage.getItem('superSearch' + k);
+    }
+
+    function typeChange(e) {
+        activeType = e.target;
+        setPlaceholder(getPlaceholder());
+        setAction(e.target.value);
+        saveItem('type', e.target.value);
+        searchTx.focus();
+        setGroupActive(e.target);
+    }
+
+    function getType() {
+        var type = getItem('type');
+
+        return type || types[0].value;
+    }
+
+    function targetChange(e) {
+        saveItem('newWindow', e.target.checked ? 1 : -1);
+        setTarget(e.target.checked)
+    }
+
+    function fmSubmit(e) {
+        e.preventDefault();
+
+        if (searchTx.value == '') {
+            searchTx.focus();
+
+            return false
+        }
+
+        setAction(getSearchUrl() + searchTx.value);
+        setTarget(isNewWindow())
+
+        if (isNewWindow()) {
+            window.open(fm.action, +new Date());
+        } else {
+            location.href = fm.action;
+        }
+    }
+
+    function isNewWindow() {
+        var isNew = getItem('newWindow');
+
+        if (! isNew) {
+            return true
+        }
+
+        return isNew == 1
+    }
+
+    function getSearchUrl() {
+        return document.querySelector('input[name="type"]:checked').value;
+    }
+
+    function getPlaceholder() {
+        return document.querySelector('input[name="type"]:checked').getAttribute('data-placeholder');
+    }
+
+    function setPlaceholder(value) {
+        searchTx.setAttribute('placeholder', value);
+    }
+
+    function setAction(value) {
+        fm.action = value;
+    }
+
+    function setTarget(newWindow) {
+        if (newWindow) {
+            fm.target = '_blank';
+        } else {
+            fm.removeAttribute('target');
+        }
+    }
+
+    //bind onchange
+    for (var i = 0; i < types.length; i ++) {
+        types[i].addEventListener('change', typeChange);
+    }
+
+    //bind target
+    target.addEventListener('change', targetChange)
+
+    //bind fm submit
+    fm.addEventListener('submit', fmSubmit);
+})();
+// End super Search
+</script>
+  <script type="text/javascript" color="255,255,255" opacity='0.7' zIndex="0" count="100" src="//lib.baomitu.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+  <script id="ilt" src="https://player.bingdou.net/player/js/player.js" key="49135e04ad0c4badb76b6a0c605aab4a"></script>
+</body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?0388e27ad00b627fe43bd8d8dea61a0b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</html>
