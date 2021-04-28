@@ -18,7 +18,7 @@
   <title>冰豆搜索 - 实用的全能搜索引擎</title>
 <meta name="Keywords"  content="冰豆搜索,聚合搜索,全能搜索,BT搜索,网盘搜索,资源搜索" />
 <meta name="Description" content="冰豆网旗下搜索引擎，提供更准确、易用的搜索向导，电影、美剧、磁力链接、字幕、小说、绿色软件、音乐、素材、网页、影视、音乐、图片、游戏、购物等，开设多种分类满足不同的搜索需求。" />
-  <link href="https://cdn.jsdelivr.net/gh/yellowside/bingdouso/style.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1230786_gdvd1b4wlz.css" />
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1572019_j5q3orglwrh.css" />
  </head> 
@@ -221,15 +221,14 @@ WIDGET = {
     <input class="wd" type="text" id="search-text" placeholder="输入关键字搜索" style="outline:0" x-webkit-speech lang="zh-CN" autocomplete="off"/>
     <button type="submit" id="searchBtn"><i class="iconfont icon-xdss"></i></button>
    </form>
-   <div id="word"></div>
    <div class="set-check hidden-xs">
     <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off" />
    </div>
    <!--foot-->
   <div class="clear"></div>
 <div class="foot">
-<p class="foot_p2"><a href="https://www.bingdou.com.cn/about/" target="_blank">关于我们</a><a href="https://www.bingdou.com.cn/about/contact.html" target="_blank">联系我们</a><a href="https://www.bingdou.com.cn/about/map.html" target="_blank">网站地图</a></p>
-<p class="foot_p2"><span>Copyright &copy; 2012-<script type="text/javascript">copyright=new Date();update=copyright.getFullYear();document.write(""+ update + "");</script> bingdou.com.cn, All Rights Reserved.</span></p>
+<p class="foot_p2"><a href="https://www.huangbin.net" target="_blank">关于我们</a><a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=jLu7urW6vbW1zP39ou-j4Q" target="_blank">联系我们</a></p>
+<p class="foot_p2"><span>Copyright &copy; 2012-<script type="text/javascript">copyright=new Date();update=copyright.getFullYear();document.write(""+ update + "");</script> huangbin.net, All Rights Reserved.</span></p>
 </div>
 <!--foot-->
   </div>
@@ -385,50 +384,7 @@ WIDGET = {
 })();
 // End super Search
 </script>
-<script type="text/javascript" color="255,255,255" opacity='0.7' zIndex="0" count="100" src="https://lib.baomitu.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
-<script>
-//关键词sug
-$(function() {
-    //当键盘键被松开时发送Ajax获取数据
-    $('.wd').keyup(function() {
-        var keywords = $(this).val();
-        if (keywords == '') { $('#word').hide(); return };
-        $.ajax({
-            url: 'https://suggestion.baidu.com/su?wd=' + keywords,
-            dataType: 'jsonp',
-            jsonp: 'cb', //回调函数的参数名(键值)key
-            // jsonpCallback: 'fun', //回调函数名(值) value
-            beforeSend: function() {
-               // $('#word').append('<li>正在加载。。。</li>');
-            },
-            success: function(data) {
-                $('#word').empty().show();
-                if (data.s == '') {
-                    //$('#word').append('<div class="error">Not find  "' + keywords + '"</div>');
-                    $('#word').hide();
-                }
-                $.each(data.s, function() {
-                    $('#word').append('<li><svg class="icon" style=" width: 15px; height: 15px; opacity: 0.5;" aria-hidden="true"><use xlink:href="#icon-sousuo"></use></svg>' + this + '</li>');
-                })
-            },
-            error: function() {
-                $('#word').empty().show();
-                //$('#word').append('<div class="click_work">Fail "' + keywords + '"</div>');
-                $('#word').hide();
-            }
-        })
-    })
-    //点击搜索数据复制给搜索框
-    $(document).on('click', '#word li', function() {
-        var word = $(this).text();
-        $('.wd').val(word);
-        $('#word').hide();
-        $("form").submit();
-        // $('#texe').trigger('click');触发搜索事件
-    })
-
-})
-	
+<script>	
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
@@ -437,5 +393,6 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+<script type="text/javascript" color="255,255,255" opacity='0.7' zIndex="0" count="100" src="https://lib.baomitu.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 </body>
 </html>
