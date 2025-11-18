@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>企业查询 - 冰豆搜索</title>
+<style>
+body {width:100%;height:100%;padding:0;margin:0;}
+li,ul {list-style:none;padding:0;margin:0;box-sizing:border-box}
+a {text-decoration:none}
+#wrapper {width:100%;height:100%;position:fixed;top:0;left:0;bottom:0;background-repeat:no-repeat;background-size:cover;transition:all 0.5s;}
+#wrapper .sidebar {width:150px;height:100%;position:absolute;top:0;left:-150px;bottom:0;background-color:#177cb0;overflow:hidden;}
+#wrapper .press-button {width:30px;height:30px;border:0;outline:none;position:absolute;top:15px;left:10px;transition:all 0.5s;cursor:pointer;font-size:26px;}
+.headSculpture {width:100%;margin-top:10px;text-align:center;}
+.headSculpture p {margin:0 auto;margin-top:5px;font-size:15px;font-weight:bold;width:120px;height:30px;line-height:30px;background-color:#065279;border-radius:15px;color:#fff;}
+.headSculpture .opacity {transform:translate(0,0);}
+.option,.option ul li {width:100%;}
+.option ul {padding:15px 0;}
+.option ul li a{display:flex;align-items:center;justify-content:center;cursor:pointer;color:#ffffff;transform:translateZ(0);position:relative;transition-property:color;transition-duration:0.4s;transition:all 1s;}
+.sidebar .option ul li.li {transform:translate(0,0);}
+.option ul li:before {content:"";position:absolute;z-index:-1;top:0;left:0;right:0;bottom:0;background:#065279;transform-origin:0 50%;transform:scaleX(0);transition:transform 0.3s ease-out;}
+.option ul li:hover,.option ul li:focus,.option ul li:active {color:#ffffff;}
+.option ul li:hover:before,.option ul li:focus:before,.option ul li:active:before {transform:scaleX(1);}
+.option ul li {width:150px;height:40px;line-height:40px;font-size:15px;letter-spacing:1px;text-align:center;}
+.search-iframe{width:100%;text-align:center;}
+header {z-index:10;position:fixed;top:0;width:100%}
+nav {width:90%;max-width:1000px;margin:auto;height:72px}
+.logo {float:left;height:45px;line-height:50px;font-size:20px;font-weight:700;margin:10px;color:#3498db}
+.white-header {background-color:#fff;box-shadow:0 4px 16px rgba(10,22,41,.16)}
+.super-search-type-box {display:block;font-size:0;max-height:288px}
+.super-search-input-box {position:relative}
+.super-search-input {box-sizing:border-box;width:100%;height:48px;line-height:24px;font-size:16px;border:1px solid #3498db;border-radius:4px;padding:11px 56px 11px 16px}
+.super-search-input:focus {border-color:#1d74f5}
+.super-search-input-box .super-search-btn {width:48px;height:48px;line-height:48px;text-align:center;font-size:24px;color:#1d74f5;cursor:pointer;position:absolute;right:0;top:0}
+.super-search-nav {overflow:hidden;height:auto}
+.super-search-logo {display:block;overflow:hidden;float:left;width:fit-content}
+.super-search-form {width:100%;max-width:calc(100% - 203px);margin:12px 0 0;float:left}
+.super-search-source {width:100%;max-width:100%;height:60px;margin:2px 0 0;position:static;color:#0a1629;font-size:0;white-space:nowrap;overflow-x:auto;overflow-y:hidden}
+.super-search-source span {font-size:16px;display:inline-block;margin-right:8px}
+.super-search-source a {color:#0a1629;line-height:48px;display:inline-block;font-size:16px;margin-right:32px}
+.super-search-source .super-search-source-active {color:#1d74f5;border-bottom:2px solid #1d74f5}
+.super-search-source a:hover {color:#1d74f5;text-decoration:none}
+.super-search-iframe-box {width:100%;height:100vh;box-sizing:border-box;padding-top:124px}
+.super-search-iframe {width:100%;height:100%;outline:0;border:0;margin:0 auto}
+.super-search-input-box .free-movie-play-btn {width:88px;height:48px;line-height:48px;border-radius:0 4px 4px 0;text-align:center;color:#fff;background-color:#1d74f5;cursor:pointer;position:absolute;right:0;top:0}
+.search-btn {width:84px;height:48px;position:absolute;top:0;right:0;text-align:center;cursor:pointer;box-sizing:border-box;width:100px;margin-left:-5px;cursor:pointer;background-color:#3498db;color:#fff;border:none;font-size:16px;line-height:48px;border-top-right-radius:3px;border-bottom-right-radius:3px;}
+.search-btn:hover {background:#fe8528;}
+@media(max-width:999px) {
+#wrapper .press-button {top:8px;}
+.super-search-form {margin-top:24px;float:none;margin-top:16px;max-width:100%}
+.super-search-type-box {display:none;position:absolute;top:45px;z-index:3;overflow:auto;background-color:#fff;box-shadow:0 0 8px rgba(10,22,41,.12);border-radius:4px}
+.super-search-input {border-radius:4px;padding:11px 56px 11px 16px}
+.super-search-input:focus {border-color:#1d74f5}
+.super-search-logo {float:none;margin:0 auto}
+.super-search-logo .logo {margin-top:15px;height:24px;line-height:24px}
+.super-search-logo .site-name {margin-top:12px;margin-right:0}
+.super-search-logo .site-name-zh {display:none}
+.super-search-iframe-box {padding-top:160px}
+}
+</style>
+</head>
+<body>
+<section id="wrapper">
+<nav class="sidebar">
+    <div class="headSculpture">
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="45.000000pt" height="45.000000pt" viewBox="0 0 220.000000 220.000000" preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,220.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
+                <path d="M1080 2055 c-7 -8 -10 -25 -6 -39 11 -45 71 -45 82 0 8 30 -11 54 -41 54 -12 0 -28 -7 -35 -15z" />
+                <path d="M926 1954 c-9 -8 -16 -22 -16 -29 0 -7 7 -21 16 -29 30 -30 74 -13 74 29 0 42 -44 59 -74 29z" />
+                <path d="M1026 1804 c-19 -18 -21 -65 -4 -82 17 -17 64 -15 82 4 21 21 20 57 -2 77 -23 21 -56 22 -76 1z" />
+                <path d="M807 1672 c-40 -44 -7 -122 51 -122 60 0 94 78 52 120 -26 26 -81 26 -103 2z" />
+                <path d="M1250 1671 c-5 -11 -10 -24 -10 -30 0 -17 46 -42 64 -35 22 8 31 50 16 69 -18 21 -57 19 -70 -4z" />
+                <path d="M1056 1588 c-23 -32 -20 -71 7 -96 64 -61 153 23 101 96 -21 31 -87 31 -108 0z" />
+                <path d="M1283 1449 c41 -47 55 -85 29 -73 -46 19 -135 34 -208 34 l-82 0 5 -45 c5 -39 2 -47 -25 -75 -50 -50 -125 -35 -152 30 -7 17 -16 30 -20 30 -18 0 -152 -104 -189 -147 -57 -65 -118 -192 -137 -283 -15 -71 -15 -225 1 -249 3 -5 54 12 114 37 l109 47 4 80 c6 139 72 244 192 306 63 33 64 33 59 70 -5 33 -1 43 25 69 34 33 67 38 111 15 30 -15 55 -62 49 -92 -2 -13 7 -23 35 -35 22 -10 44 -15 51 -11 6 3 8 3 4 -1 -4 -5 12 -22 35 -40 44 -33 110 -122 104 -140 -5 -15 -156 -79 -438 -186 -607 -230 -870 -386 -795 -469 26 -28 128 -53 240 -57 96 -5 99 -4 64 9 -58 22 -87 45 -94 73 -9 35 2 41 29 17 12 -12 38 -26 57 -31 19 -5 53 -18 74 -27 l39 -17 -16 26 c-27 40 -20 82 20 128 14 16 19 13 59 -36 142 -175 392 -254 618 -196 111 28 189 74 277 160 81 80 136 173 164 280 27 101 13 339 -19 326 -6 -2 -37 -12 -68 -22 -32 -9 -55 -20 -52 -25 3 -5 -1 -6 -9 -4 -13 6 -347 -116 -597 -217 -324 -131 -509 -253 -498 -329 6 -36 -11 -38 -48 -6 l-27 24 39 43 c91 101 370 252 644 350 556 198 917 369 993 472 40 53 1 93 -113 117 -48 10 -279 24 -245 15 11 -3 37 -10 57 -15 48 -12 98 -55 98 -83 0 -37 -48 -94 -122 -146 -39 -27 -75 -50 -79 -50 -5 0 -10 62 -11 137 l-3 138 -180 57 c-99 31 -186 57 -193 57 -8 1 2 -17 21 -40z m98 -376 c13 -16 12 -17 -3 -4 -17 13 -22 21 -14 21 2 0 10 -8 17 -17z m37 -255 c-9 -116 -95 -235 -206 -286 -73 -34 -176 -41 -253 -18 -53 16 -149 77 -149 95 0 14 188 102 375 175 94 37 179 71 190 76 42 18 48 13 43 -42z m69 -25 c-3 -10 -5 -2 -5 17 0 19 2 27 5 18 2 -10 2 -26 0 -35z" />
+            </g>
+        </svg>
+        <p>冰豆搜索</p>
+    </div>
+    <div class="option">
+        <ul>
+            <li><a href="../">首 页</a></li>
+            <li><a href="../net/?wd=" class="dynamic-link" data-param="wd">网页信息</a></li>
+            <li><a href="../pan/?wd=" class="dynamic-link" data-param="wd">网盘资源</a></li>
+            <li><a href="../movie/?wd=" class="dynamic-link" data-param="wd">在线影视</a></li>
+            <li><a href="../down/?wd=" class="dynamic-link" data-param="wd">影视下载</a></li>
+            <li><a href="../shop/?wd=" class="dynamic-link" data-param="wd">特惠购物</a></li>
+            <li><a href="../music/?wd=" class="dynamic-link" data-param="wd">音乐下载</a></li>
+            <li><a href="../pic/?wd=" class="dynamic-link" data-param="wd">图片搜索</a></li>
+            <li><a href="../qiye/?wd=" class="dynamic-link" data-param="wd">企业查询</a></li>
+        </ul>
+    </div>
+</nav>
+<header class="white-header">
+    <div class="press-button">☰</div>
+    <nav class="super-search-nav">
+        <a href="./" class="super-search-logo"><div class="logo">企业查询</div></a>
+        <div class="super-search-form">
+            <div class="super-search-input-box">
+                <form id="formsearch" action="./" method="get">
+                    <input class="super-search-input" type="text" name="wd" id="search-input" placeholder="输入关键词">
+                    <button type="submit" class="search-btn">立即搜索</button>
+                </form>
+                <div class="super-search-source">
+                    <span>切换搜索源：</span>
+                    <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://aiqicha.baidu.com/s?t=0&q=" target="iframe-player">爱企查</a>
+                  <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.tianyancha.com/search?key=" target="iframe-player">天眼查</a>
+                  <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.qichamao.com/search/all/" data-suffix="?mfccode=7195" target="iframe-player">企查猫</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="search-iframe">
+    <div class="super-search-iframe-box">
+        <iframe class="super-search-iframe" name="iframe-player" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen="true" allowtransparency="true" id="player-iframe"></iframe>
+    </div>
+</section>
+</section>
+<script>
+// 获取 URL 参数函数
+function getUrlParam(name) {
+    // 处理可能的编码问题，先尝试直接获取
+    let value = new URLSearchParams(window.location.search).get(name);
+    
+    // 如果直接获取失败，尝试手动解析URL
+    if (value === null) {
+        const url = window.location.href;
+        const regex = new RegExp(`[?&]${name}=([^&#]*)`);
+        const results = regex.exec(url);
+        if (results && results[1]) {
+            value = results[1];
+        } else {
+            value = '';
+        }
+    }
+    
+    // 确保解码正确
+    try {
+        return decodeURIComponent(value.replace(/\+/g, ' ')).trim();
+    } catch (e) {
+        // 处理解码错误
+        return value.trim();
+    }
+}
+
+// 页面加载完成后执行
+document.addEventListener('DOMContentLoaded', function () {
+    const wd = getUrlParam('wd');
+
+    // 更新页面标题
+    document.title = '搜索【' + (wd || '') + '】的结果 | 冰豆搜索';
+
+    // 更新搜索框值
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) searchInput.value = wd || '';
+
+    const iframeLinks = document.querySelectorAll('.dynamic-iframe-link');
+    const iframe = document.getElementById('player-iframe');
+    
+    iframeLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            // 1. 阻止链接的默认跳转行为
+            event.preventDefault();
+
+            // 2. 获取当前搜索框中的关键词（而不是URL中的，更实时）
+            const currentWd = searchInput.value.trim();
+            if (!currentWd) {
+                // 如果搜索框为空，可以给个提示或不做任何操作
+                console.log('请输入搜索关键词');
+                return;
+            }
+
+            // 3. 获取链接的 base-url
+            const baseUrl = this.getAttribute('data-base-url');
+            
+            // 4. 检查 target 属性，决定是否在 iframe 中打开
+            const target = this.getAttribute('target');
+
+            if (target === 'iframe-player' && iframe) {
+                // 如果目标是在 iframe 中打开
+                const fullUrl = baseUrl + encodeURIComponent(currentWd);
+                iframe.src = fullUrl;
+                
+                // 5. (可选) 更新活动链接的视觉样式
+                document.querySelectorAll('.super-search-source-active').forEach(activeLink => {
+                    activeLink.classList.remove('super-search-source-active');
+                });
+                this.classList.add('super-search-source-active');
+            } 
+            // 如果 target 是 _blank 或其他，则让它按默认方式打开（因为我们已经 preventDefault，所以需要手动处理）
+            else if (target === '_blank') {
+                 const fullUrl = baseUrl + encodeURIComponent(currentWd);
+                 window.open(fullUrl, '_blank');
+            }
+        });
+    });
+
+    // 如果有搜索关键词，更新链接和iframe
+    if (wd) {
+        // 更新左侧菜单链接
+        document.querySelectorAll('.dynamic-link[data-param="wd"]').forEach(link => {
+            link.href = link.href + encodeURIComponent(wd);
+        });
+
+        // 更新顶部搜索源链接和 iframe
+        const iframe = document.getElementById('player-iframe');
+        let defaultSrc = '';
+        
+        document.querySelectorAll('.dynamic-iframe-link').forEach(link => {
+            const baseUrl = link.getAttribute('data-base-url');
+            const suffix = link.getAttribute('data-suffix') || '';
+            const href = baseUrl + encodeURIComponent(wd) + suffix;
+            link.href = href;
+
+            // 设置默认iframe源（使用第一个搜索源）
+            if (!defaultSrc) defaultSrc = href;
+        });
+
+        // 设置iframe源
+        if (iframe) iframe.src = defaultSrc;
+    } else {
+        // 没有搜索关键词时显示首页
+        const iframe = document.getElementById('player-iframe');
+        if (iframe) iframe.src = 'https://aiqicha.baidu.com/s?t=0&q=百度';
+    }
+
+    // 侧边栏弹出功能（原jQuery逻辑迁移）
+    const pressButton = document.querySelector('.press-button');
+    const wrapper = document.getElementById('wrapper');
+    const headSculptureImg = document.querySelector('.headSculpture img');
+    const headSculptureP = document.querySelector('.headSculpture p');
+    const optionLis = document.querySelectorAll('.option ul>li');
+
+    // 修复原代码中未定义的SRC变量问题
+    const SRC = []; // 初始化空数组避免报错
+
+    if (pressButton && wrapper) {
+        pressButton.addEventListener('click', function () {
+            const left = wrapper.offsetLeft;
+            if (left === 0) {
+                // 展开侧边栏
+                wrapper.style.left = '150px';
+                this.style.transform = 'rotate(450deg)';
+                if (headSculptureImg) headSculptureImg.classList.add('img');
+                if (headSculptureP) headSculptureP.classList.add('opacity');
+                
+                setTimeout(function () {
+                    optionLis.forEach(li => li.classList.add('li'));
+                }, 600);
+            } else {
+                // 收起侧边栏
+                wrapper.style.left = '0';
+                this.style.transform = 'rotate(0deg)';
+                
+                setTimeout(function () {
+                    if (headSculptureImg) headSculptureImg.classList.remove('img');
+                    if (headSculptureP) headSculptureP.classList.remove('opacity');
+                    optionLis.forEach(li => li.classList.remove('li'));
+                }, 300);
+            }
+        });
+    }
+
+    // 侧边栏菜单鼠标进出事件
+    optionLis.forEach((li, index) => {
+        // 鼠标进入
+        li.addEventListener('mouseenter', function () {
+            const img = this.querySelector('img');
+            if (img && SRC[index] && SRC[index].src) {
+                img.setAttribute('src', SRC[index].src);
+            }
+        });
+
+        // 鼠标离开
+        li.addEventListener('mouseleave', function () {
+            const img = this.querySelector('img');
+            if (img && SRC[index + 5] && SRC[index + 5].src) {
+                img.setAttribute('src', SRC[index + 5].src);
+            }
+        });
+    });
+});
+</script>
+<script>	
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0388e27ad00b627fe43bd8d8dea61a0b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
