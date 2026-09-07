@@ -103,9 +103,11 @@ nav {width:90%;max-width:1000px;margin:auto;height:72px}
                 </form>
                 <div class="super-search-source">
                     <span>切换搜索源：</span>
-                    <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://aiqicha.baidu.com/s?t=0&q=" target="iframe-player">爱企查</a>
+                    <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.gsxt.gov.cn/" target="_blank">国家公示系统</a>
+                    <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.qcc.com/web/search?key=" target="iframe-player">企查查</a>
                   <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.tianyancha.com/search?key=" target="iframe-player">天眼查</a>
                   <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.qichamao.com/search/all/" data-suffix="?mfccode=7195" target="iframe-player">企查猫</a>
+                    <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://aiqicha.baidu.com/s?t=0&q=" target="_blank">爱企查</a>
                 </div>
             </div>
         </div>
@@ -222,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         // 没有搜索关键词时显示首页
         const iframe = document.getElementById('player-iframe');
-        if (iframe) iframe.src = 'https://aiqicha.baidu.com/s?t=0&q=百度';
+        if (iframe) iframe.src = 'https://www.qcc.com/web/search?key=百度';
     }
 
     // 侧边栏弹出功能（原jQuery逻辑迁移）
@@ -282,14 +284,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 </script>
-<script>	
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?0388e27ad00b627fe43bd8d8dea61a0b";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<script async src="https://019e8b56-6966-7b85-88bf-0d5f23893662.spst2.com/ustat.js"></script>
 </body>
 </html>
