@@ -103,7 +103,7 @@ nav {width:90%;max-width:1000px;margin:auto;height:72px}
                 </form>
                 <div class="super-search-source">
                     <span>切换搜索源：</span>
-                    <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.gsxt.gov.cn/" target="_blank">国家公示系统</a>
+                    <a class="super-search-source-item dynamic-iframe-link" href="https://www.gsxt.gov.cn/" target="_blank">国家公示系统</a>
                     <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.qcc.com/web/search?key=" target="iframe-player">企查查</a>
                   <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.tianyancha.com/search?key=" target="iframe-player">天眼查</a>
                   <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.qichamao.com/search/all/" data-suffix="?mfccode=7195" target="iframe-player">企查猫</a>
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         // 没有搜索关键词时显示首页
         const iframe = document.getElementById('player-iframe');
-        if (iframe) iframe.src = 'https://www.qcc.com/web/search?key=百度';
+        if (iframe) iframe.src = 'https://www.tianyancha.com/search?key=百度';
     }
 
     // 侧边栏弹出功能（原jQuery逻辑迁移）
