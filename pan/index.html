@@ -103,6 +103,7 @@ nav {width:90%;max-width:1000px;margin:auto;height:72px}
                 </form>
                 <div class="super-search-source">
                     <span>切换搜索源：</span>
+                    <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.panso567.com/search?keyword=" target="iframe-player">聚盘搜</a>
                     <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://miaosou.fun/info?searchKey=" target="iframe-player">秒搜</a>
                   <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://cdn.yiso.fun/info?searchKey=" target="iframe-player">易搜</a>
                   <a class="super-search-source-item dynamic-iframe-link" data-base-url="https://www.upyunso.com/search.html?page=1&keyword=" target="iframe-player">UP云搜</a>
@@ -226,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         // 没有搜索关键词时显示首页
         const iframe = document.getElementById('player-iframe');
-        if (iframe) iframe.src = 'https://miaosou.fun/info?searchKey=资源';
+        if (iframe) iframe.src = 'https://www.panso567.com/search?keyword=资源';
     }
 
     // 侧边栏弹出功能（原jQuery逻辑迁移）
